@@ -1,0 +1,302 @@
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    transition:.4s;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#0d6efd;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.navbar{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px;
+}
+
+.logo{
+
+    color:white;
+}
+
+.menu{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.menu a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu a:hover{
+
+    color:#ffd43b;
+}
+
+#tema{
+
+    border:none;
+    background:white;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ===========================
+   SEÇÕES
+=========================== */
+
+section{
+
+    max-width:1100px;
+    margin:auto;
+
+    padding:120px 20px 70px;
+}
+
+h1,h2{
+
+    margin-bottom:20px;
+}
+
+span{
+
+    color:#0d6efd;
+}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero p{
+
+    margin:20px 0;
+    line-height:1.7;
+}
+
+.hero ul{
+
+    margin-left:20px;
+    margin-top:15px;
+}
+
+.foto img{
+
+    width:280px;
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #0d6efd;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    margin:20px 0;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   PORTFÓLIO
+=========================== */
+
+.projetos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+/* ===========================
+   FORMULÁRIO
+=========================== */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+button{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#084298;
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+/* ===========================
+   TEMA ESCURO
+=========================== */
+
+.dark{
+
+    background:#121212;
+
+    color:white;
+}
+
+.dark .card{
+
+    background:#1f1f1f;
+
+    color:white;
+}
+
+.dark input,
+.dark textarea{
+
+    background:#2b2b2b;
+
+    color:white;
+
+    border:1px solid #555;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.menu{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.navbar{
+
+flex-direction:column;
+
+}
+
+.foto img{
+
+width:220px;
+
+height:220px;
+
+}
+
+}
